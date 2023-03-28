@@ -1,0 +1,23 @@
+{
+  "images" : [
+    {
+      "filename" : "carson-arias-7Z03R1wOdmI-unsplash.jpg",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "carson-arias-7Z03R1wOdmI-unsplash 1.jpg",
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "carson-arias-7Z03R1wOdmI-unsplash 2.jpg",
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
