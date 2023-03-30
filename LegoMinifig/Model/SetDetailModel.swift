@@ -8,5 +8,5 @@
 import Foundation
 
 struct SetDetailModel: Codable {
-    let results: [SetPropertyModel]
+    var results: [SetPropertyModel]
 }

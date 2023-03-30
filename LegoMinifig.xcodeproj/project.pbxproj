@@ -13,6 +13,10 @@
 		4037B33429D2099900DFC31D /* SetDetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4037B33329D2099900DFC31D /* SetDetailModel.swift */; };
 		4037B33629D20A3400DFC31D /* SetDetailManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4037B33529D20A3400DFC31D /* SetDetailManager.swift */; };
 		4037B33929D2106C00DFC31D /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4037B33829D2106C00DFC31D /* String.swift */; };
+		4037B33C29D2C24900DFC31D /* DetailTitleMinifigureCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4037B33A29D2C24900DFC31D /* DetailTitleMinifigureCell.swift */; };
+		4037B33D29D2C24900DFC31D /* DetailTitleMinifigureCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4037B33B29D2C24900DFC31D /* DetailTitleMinifigureCell.xib */; };
+		4037B34029D2C27000DFC31D /* DetailComponentsMinifigureCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4037B33E29D2C27000DFC31D /* DetailComponentsMinifigureCell.swift */; };
+		4037B34129D2C27000DFC31D /* DetailComponentsMinifigureCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4037B33F29D2C27000DFC31D /* DetailComponentsMinifigureCell.xib */; };
 		40573B7129CAF184003AB9E1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40573B7029CAF184003AB9E1 /* AppDelegate.swift */; };
 		40573B7329CAF184003AB9E1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40573B7229CAF184003AB9E1 /* SceneDelegate.swift */; };
 		40573B7829CAF184003AB9E1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40573B7629CAF184003AB9E1 /* Main.storyboard */; };
@@ -32,6 +36,10 @@
 		4037B33329D2099900DFC31D /* SetDetailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetDetailModel.swift; sourceTree = "<group>"; };
 		4037B33529D20A3400DFC31D /* SetDetailManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetDetailManager.swift; sourceTree = "<group>"; };
 		4037B33829D2106C00DFC31D /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		4037B33A29D2C24900DFC31D /* DetailTitleMinifigureCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTitleMinifigureCell.swift; sourceTree = "<group>"; };
+		4037B33B29D2C24900DFC31D /* DetailTitleMinifigureCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailTitleMinifigureCell.xib; sourceTree = "<group>"; };
+		4037B33E29D2C27000DFC31D /* DetailComponentsMinifigureCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailComponentsMinifigureCell.swift; sourceTree = "<group>"; };
+		4037B33F29D2C27000DFC31D /* DetailComponentsMinifigureCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailComponentsMinifigureCell.xib; sourceTree = "<group>"; };
 		40573B6D29CAF184003AB9E1 /* LegoMinifig.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LegoMinifig.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		40573B7029CAF184003AB9E1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		40573B7229CAF184003AB9E1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -133,6 +141,10 @@
 			children = (
 				40C1298029CDABEB006FD153 /* MinifiguresBannerCell.swift */,
 				40C1298129CDABEB006FD153 /* MinifiguresBannerCell.xib */,
+				4037B33A29D2C24900DFC31D /* DetailTitleMinifigureCell.swift */,
+				4037B33B29D2C24900DFC31D /* DetailTitleMinifigureCell.xib */,
+				4037B33E29D2C27000DFC31D /* DetailComponentsMinifigureCell.swift */,
+				4037B33F29D2C27000DFC31D /* DetailComponentsMinifigureCell.xib */,
 			);
 			path = CustomCellMinifigures;
 			sourceTree = "<group>";
@@ -197,6 +209,8 @@
 			files = (
 				40573B7D29CAF185003AB9E1 /* LaunchScreen.storyboard in Resources */,
 				40573B7A29CAF185003AB9E1 /* Assets.xcassets in Resources */,
+				4037B33D29D2C24900DFC31D /* DetailTitleMinifigureCell.xib in Resources */,
+				4037B34129D2C27000DFC31D /* DetailComponentsMinifigureCell.xib in Resources */,
 				40C1298329CDABEB006FD153 /* MinifiguresBannerCell.xib in Resources */,
 				40573B7829CAF184003AB9E1 /* Main.storyboard in Resources */,
 			);
@@ -209,8 +223,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4037B33C29D2C24900DFC31D /* DetailTitleMinifigureCell.swift in Sources */,
 				4037B33229CDED5500DFC31D /* MinifiguresSetManager.swift in Sources */,
 				40573B8629CB169F003AB9E1 /* LoginViewController.swift in Sources */,
+				4037B34029D2C27000DFC31D /* DetailComponentsMinifigureCell.swift in Sources */,
 				40573B8929CCBB54003AB9E1 /* LoginManager.swift in Sources */,
 				4037B32E29CDB0C700DFC31D /* SetModel.swift in Sources */,
 				40C1297829CD9B28006FD153 /* YourMinifiguresViewController.swift in Sources */,

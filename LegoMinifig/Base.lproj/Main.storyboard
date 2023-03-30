@@ -186,7 +186,7 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="e3e-l8-cen">
-                        <barButtonItem key="leftBarButtonItem" style="plain" systemItem="cancel" id="IRS-86-Wqd">
+                        <barButtonItem key="leftBarButtonItem" title="Log Out" style="plain" id="IRS-86-Wqd">
                             <connections>
                                 <action selector="LogoutButton:" destination="Dff-vd-hsB" id="fKT-UN-0TW"/>
                             </connections>
@@ -212,14 +212,29 @@
                     <view key="view" contentMode="scaleToFill" id="p5Y-cN-K1c">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="a70-Rw-G7M">
+                                <rect key="frame" x="0.0" y="103" width="393" height="749"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="ybf-qS-VFD"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="a70-Rw-G7M" firstAttribute="trailing" secondItem="ybf-qS-VFD" secondAttribute="trailing" id="DoE-Br-0ZI"/>
+                            <constraint firstItem="a70-Rw-G7M" firstAttribute="top" secondItem="ybf-qS-VFD" secondAttribute="top" id="cJm-4q-h51"/>
+                            <constraint firstItem="a70-Rw-G7M" firstAttribute="leading" secondItem="ybf-qS-VFD" secondAttribute="leading" id="fG3-Pb-adc"/>
+                            <constraint firstAttribute="bottom" secondItem="a70-Rw-G7M" secondAttribute="bottom" id="t8n-h9-TXC"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="kMK-n5-CNt"/>
+                    <connections>
+                        <outlet property="tableView" destination="a70-Rw-G7M" id="L0s-Oz-sUW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="i2d-OT-IHb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1676" y="61"/>
+            <point key="canvasLocation" x="1675.5725190839694" y="60.563380281690144"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="d9e-jk-kFi">

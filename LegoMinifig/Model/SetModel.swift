@@ -16,20 +16,17 @@ struct SetModel: Codable {
 
 
 struct Result: Codable {
-    let listID, quantity: Int
-    let includeSpares: Bool
+    let listID: Int?
     var propertySet: SetPropertyModel
 
     enum CodingKeys: String, CodingKey {
         case listID = "list_id"
-        case quantity
-        case includeSpares = "include_spares"
         case propertySet = "set"
     }
     
     static let mokResult1: [Result] = [
-        Result(listID: 1234, quantity: 1, includeSpares: false, propertySet: SetPropertyModel.mokProperty1),
-        Result(listID: 5678, quantity: 1, includeSpares: false, propertySet: SetPropertyModel.mokProperty2)
+        Result(listID: 1234, propertySet: SetPropertyModel.mokProperty1),
+        Result(listID: 5678, propertySet: SetPropertyModel.mokProperty2)
     ]
 }
 
@@ -41,6 +38,7 @@ struct SetPropertyModel: Codable {
     let setURL: String
     let lastModifiedDt: String
     var coverImage: Data? = nil
+    var userHas: Bool? = nil
     
 
     enum CodingKeys: String, CodingKey {

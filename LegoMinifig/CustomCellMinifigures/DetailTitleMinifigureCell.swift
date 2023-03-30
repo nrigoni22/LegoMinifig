@@ -1,33 +1,35 @@
 //
-//  MinifiguresBannerCell.swift
+//  DetailTitleMinifigureCell.swift
 //  LegoMinifig
 //
-//  Created by Nicola Rigoni on 24/03/23.
+//  Created by Nicola Rigoni on 28/03/23.
 //
 
 import UIKit
 
-class MinifiguresBannerCell: UITableViewCell {
-
-    static let identifier = "MinifiguresBannerCell"
+class DetailTitleMinifigureCell: UITableViewCell {
+    
+    
+    static let identifier = "DetailTitleMinifigureCell"
     
     static func nib() -> UINib {
-        return UINib(nibName: "MinifiguresBannerCell", bundle: nil)
+        return UINib(nibName: "DetailTitleMinifigureCell", bundle: nil)
     }
     
     public func configure(setProperty: SetPropertyModel){
-        
         if let imageData = setProperty.coverImage, let image = UIImage(data: imageData) {
-            setImage.image = image
+            coverImage.image = image
         }
         
         titleLabel.text = setProperty.name
-        yearLabel.text = "\(setProperty.year)"
+        
+        yearLabel.text = "Production year: \(setProperty.year)"
     }
     
-    @IBOutlet weak var titleLabel: UILabel!
     
-    @IBOutlet weak var setImage: UIImageView!
+    @IBOutlet weak var coverImage: UIImageView!
+    
+    @IBOutlet weak var titleLabel: UILabel!
     
     @IBOutlet weak var yearLabel: UILabel!
     
